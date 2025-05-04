@@ -2,85 +2,92 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f8f8f8;
-  color: #2e2e2e;
+  background-color: #f6f6f6;
+  color: #2b2b2b;
 }
 .hero {
   background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  position: relative;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-.hero .overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
   padding: 2rem;
-  border-radius: 10px;
+  border-radius: 12px;
+  color: #fff;
 }
-.hero h1 {
+.overlay h1 {
   font-size: 3rem;
-  margin: 0;
+  margin-bottom: 0.5rem;
 }
-.tagline {
+.subtitle {
   font-size: 1.2rem;
-  margin: 1rem 0;
+  margin-bottom: 1.5rem;
 }
 .cta {
   background-color: #ffffff;
-  color: #2e2e2e;
-  padding: 0.7rem 1.5rem;
-  border-radius: 5px;
+  color: #333;
+  padding: 0.8rem 1.5rem;
   text-decoration: none;
   font-weight: bold;
+  border-radius: 5px;
 }
 nav {
+  background-color: #fff;
   display: flex;
   justify-content: center;
   gap: 2rem;
-  background-color: #ffffff;
   padding: 1rem 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
 nav a {
-  color: #2e2e2e;
   text-decoration: none;
+  color: #2b2b2b;
   font-weight: 500;
 }
-main {
-  padding: 2rem;
+.section {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+.section.light {
+  background-color: #ffffff;
 }
 h2 {
-  text-align: center;
-  color: #444;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
-ul {
-  list-style: none;
-  padding: 0;
-  text-align: center;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
 }
-ul li {
-  padding: 0.5rem 0;
+.card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 .gallery {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
 }
 .gallery img {
   width: 300px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 }
 footer {
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem;
   background-color: #ffffff;
-  color: #888;
-  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #777;
 }
